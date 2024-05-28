@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/aboutme.css">
+    <link rel="stylesheet" type="text/css" href="css/skill&work.css">
+    <link rel="stylesheet" type="text/css" href="css/publications.css">
+    <link rel="stylesheet" type="text/css" href="css/notes.css">
+    <link rel="stylesheet" type="text/css" href="css/events.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://maxcdn.bootstrapcdn.com/boostrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- copyright -->
+    <div class="copyright">©2024 by Z.K. Yang</div>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <!-- sidebar header -->
+        <div class="logo">
+            <a href="#" data-target="welcome">
+                <i class='bx bx-dna'></i>
+                <span class="logo_name">Personal Web</span>
+            </a>
+        </div>
+        <!-- sidebar links -->
+        <ul class="nav-links">
+            <!-- Section:About Me -->
+            <li>
+                <a href="#" data-target="aboutme">
+                    <i class='bx bx-id-card' ></i>
+                    <span class="link_name">About Me</span>
+                </a>
+                <!-- show the descriptional words when your arrow is on the corresponding icon -->
+                <ul class="sub_menu blank">
+                    <li><a class="link_name" href="#" data-target="aboutme">About Me</a></li>
+                </ul>
+            </li>
+            <!-- Section:Skill & Work -->
+            <li>
+                <a href="#" data-target="skill_work">
+                    <i class='bx bx-atom'></i>
+                    <span class="link_name">Skill & Work</span>
+                </a>
+                <ul class="sub_menu blank">
+                    <li><a class="link_name" href="#" data-target="skill_work">Skill & Work</a></li>
+                </ul>
+            </li>
+            <!-- Section:Publication -->
+            <li>
+                <a href="#" data-target="publications">
+                    <i class='bx bx-library'></i>
+                    <span class="link_name">Publications</span>
+                </a>
+                <ul class="sub_menu blank">
+                    <li><a class="link_name" href="#" data-target="publications">Publications</a></li>
+                </ul>
+            </li>
+            <!-- Section:Project -->
+            <!--
+            <li>
+                <div class="icon-links">
+                    <a href="#">
+                        <i class='bx bx-spreadsheet'></i>
+                        <span class="link_name">Project</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow' ></i>
+                </div>
+                <ul class="sub_menu">
+                    <li><a class="link_name" href="#" >Project</a></li>
+                    <li><a href="#">Bio Info Book</a></li>
+                    <li><a href="#">lorem</a></li>
+                </ul>
+            </li>
+            -->
+            <!-- Section:Notes -->
+            <li>
+                <a href="#" data-target="notes">
+                    <i class='bx bx-note'></i>
+                    <span class="link_name">Notes</span>
+                </a>
+                <ul class="sub_menu blank">
+                    <li><a class="link_name" href="#" data-target="notes">Notes</a></li>
+                </ul>
+            </li>
+            
+            <!-- Section:Events -->
+            <li>
+                <a href="#" data-target="events">
+                    <i class='bx bx-calendar-event'></i>
+                    <span class="link_name">Events</span>
+                </a>
+                <ul class="sub_menu blank">
+                    <li><a class="link_name" href="#">Events</a></li>
+                </ul>
+            </li>
+           
+            <!-- Section:Fun -->
+            <!--
+            <li>
+                <a href="#">
+                    <i class='bx bx-party' ></i>
+                    <span class="link_name">Fun</span>
+                </a>
+                <ul class="sub_menu blank">
+                    <li><a class="link_name" href="#">Fun</a></li>
+                </ul>
+            </li>
+            -->
+        </ul>
+        
+        <!-- profile -->
+        <!--
+        <li>
+            <div class="profile">
+                <div class="profile_content">
+                    <img src="/image/blog/profile.jpg" alt="profile">
+                </div>
+                <div class="name_job">
+                    <div class="profile_name">Zikun Yang</div>
+                    <div class="profile_job">from SJTU</div>
+                </div>
+                
+            </div>
+        </li>
+        -->
+    </div>
+
+    <!-- content -->
+    <section id="home_section" class="home_section">
+        <!-- background image -->
+        <img src="./image/index/background.jpg" alt="" id="background_img">
+        <!-- div near the sidebar -->
+        <div class="home_content">
+            <i class='bx bx-menu' ></i>
+            <span id="home_content_welcome" class="text">HomePage</span>
+            <span id="home_content_aboutme" class="text">About Me</span>
+            <span id="home_content_skill_work" class="text">Skill & Work</span>
+            <span id="home_content_publications" class="text">Publications</span>
+            <span id="home_content_notes" class="text">Notes</span>
+            <span id="home_content_events" class="text">Events</span>
+        <!-- content region -->
+        <div class="page_content">
+            <!-- content:welcome! -->
+            <div id="welcome" class="welcome">   <!--  !!!!!!!!!!!!!!!!!!!!!!!! -->
+                <div class="welcome_text">
+                    <div class="printer">
+                        <p class="line1">Welcome!- </p>
+                    </div>
+                    <div class="im">
+                        <p style="font-size: 38px;">I'm Zikun Yang</p>
+                        <p style="font-size: 34px;">study in SJTU</p>
+                        <p style="font-size: 32px;">bioscience</p>
+                        <p style="font-size: 26px;">enthusiast</p>
+                        <p style="font-size: 24px;">welcome</p>
+                        <p style="font-size: 22px;">to visit</p>
+                        <p style="font-size: 18px;">here</p>
+                    </div>
+                </div>
+                <div class="welcome_pic"></div>
+            </div>
+
+            <!-- content:about me -->
+            <div id="aboutme" class="aboutme">
+                <p id="myname">杨子坤 &emsp; Zikun Yang</p>
+                <p id="status">undergraduate</p>
+                <p class="subtitle">Education</p>
+                <p class="info">Sep 2022 - Jun 2026 &emsp;&emsp; B.Sc, Shanghai Jiao Tong University, China</p>
+                <p class="info">Sep 2019 - Jun 2022 &emsp;&emsp; High School Diploma, Suzhou High School Of Jiangsu Province, China</p>
+                <p class="subtitle">xxxx</p>
+                <p class="info">xxxxx</p>
+                <a href="./file/zikunyang_CV.pdf" download="zkyang_CV">
+                    <button id="cv_button">CV</button>
+                </a>
+                
+            </div>
+            <!-- content:skill&work -->
+            <div id="skill_work" class="skill_work">
+                <ul class="content_list">
+                    <li>
+                        <div class="skill">
+                            <div class="skill_icon"><img src="./image/skill&work/pr.png" alt=""></div>
+                            <div class="skill_name">Adobe Premiere</div>
+                        </div>
+                        <div class="work">
+                            <div class="display_box" title=""><img src="./image/skill&work/same-with-you.png" alt=""></div>
+                            <div class="display_box" title=""><img src="./image/skill&work/phy-meeting.png" alt=""></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill">
+                            <div class="skill_icon"><img src="./image/skill&work/ai.png" alt=""></div>
+                            <div class="skill_name">Adobe Illustrator</div>
+                        </div>
+                        <div class="work">
+                            <div class="display_box" title="Lab Coat Logo"><img src="./image/skill&work/clo-logo.png" alt=""></div>
+                            <div class="display_box" title="Figure in Paper of English Academic Writing Course"><img src="./image/skill&work/Eng-cource.png" alt=""></div>
+                            <div class="display_box" title="Virtual Background of Online Presentation"><img src="./image/skill&work/virual-background.png" alt=""></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill">
+                            <div class="skill_icon"><img src="./image/skill&work/python.png" alt=""></div>
+                            <div class="skill_name">Python</div>
+                        </div>
+                        <div class="work">
+                            <div class="display_box" title="" alt=""></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill">
+                            <div class="skill_icon"><img src="./image/skill&work/html.png" alt=""></div>
+                            <div class="skill_icon" style="margin-left: 0px;padding-left: 0px;padding-right:0px ;"><img src="./image/skill&work/css.png" alt=""></div>
+                            <div class="skill_name">Html + CSS</div>
+                        </div>
+                        <div class="work">
+                            <div class="display_box" title="" alt=""></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill">
+                            <div class="skill_icon"><img src="" alt=""></div>
+                            <div class="skill_icon" style="margin-left: 0px;padding-left: 0px;padding-right:0px ;"><img src="" alt=""></div>
+                            <div class="skill_name"></div>
+                        </div>
+                        <div class="work">
+                            <div class="display_box" title="" alt=""></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill">
+                            <div class="skill_icon"><img src="" alt=""></div>
+                            <div class="skill_icon" style="margin-left: 0px;padding-left: 0px;padding-right:0px ;"><img src="" alt=""></div>
+                            <div class="skill_name"></div>
+                        </div>
+                        <div class="work">
+                            <div class="display_box" title="" alt=""></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- content:publications -->
+            <div id="publications" class="publications">
+                <p class="subtitle" style="font-style: italic;">bioRxiv</p>
+                <a href="https://www.biorxiv.org/content/10.1101/2024.04.07.588379v1" target="_blank">
+                    <p class="article">Comparative genomics of macaques and integrated insights into genetic variation and population history.</p>
+                </a>
+                <p class="info">Zhang, S., Xu, N., Fu, L., Yang, X., Li, Y., <span class="myname">Yang, Z.</span>, …, Sun, Q.*, & Mao, Y.* (2024). 
+                    <span class="magazine">bioRxiv</span></p>
+                <p class="subtitle">2024</p>
+                <a href="https://www.zoores.ac.cn/en/article/doi/10.24272/j.issn.2095-8137.2023.322" target="_blank">
+                    <p class="article">Comparative transcriptome in rhesus macaques and crab-eating macaques.</p>
+                </a>
+                <p class="info">Mao Y.X. , Li Y. , <span class="myname">Yang Z.</span>, Ning X., Zhang S. , Wang X. , Yang X., Sun Q., Mao Y.(2023).
+                     <span class="magazine">Zoological Research</span></p>
+            </div>
+
+            <!-- content:notes -->
+            <div id="notes" class="notes">
+                <a href="#">
+                    <div class="note_block">
+                        <div class="title"><p class="title_word">This is a title</p></div>
+                        <div class="description">this is description...</div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="note_block">
+                        <div class="title"><p class="title_word">This is a title</p></div>
+                        <div class="description">this is description...</div>
+                    </div>
+                </a>
+                
+                <p style="position: absolute;;font-size: 15px;font-weight: 400;left: 35%;top:60%">being developed...</p>
+            </div>
+
+             <!-- content:events -->
+             <div id="events" class="events">
+                <div class="event_box">
+                    <div class="figure">
+                        <img src="image/events/new member.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="date"><p>Mar 7,2023</p></div>
+                        <div class="content"><p>nnnnnsnnsnsns</p></div>
+                    </div>
+                </div>
+                <div class="event_box">
+                    <div class="text">
+                        <div class="date"><p>Mar 7,2023</p></div>
+                        <div class="content"><p>nnnnnsnnsnsns</p></div>
+                    </div>
+                    <div class="figure">
+                        <img src="image/events/2023 enrollment work.jpg" alt="">
+                    </div>
+                </div>
+                <div class="event_box">
+                    <div class="figure">
+                        <img src="" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="date"><p>Mar 7,2023</p></div>
+                        <div class="content"><p>nnnnnsnnsnsns</p></div>
+                    </div>
+                </div>
+                <div class="event_box">
+                    <div class="text">
+                        <div class="date"><p>Mar 7,2023</p></div>
+                        <div class="content"><p>nnnnnsnnsnsns</p></div>
+                    </div>
+                    <div class="figure">
+                        <img src="image/events/new member.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--  ????????????????????????????????????????????????????  --> 
+    <script>
+    let arrow = document.querySelectorAll(".arrow")   
+    for (var i = 0 ; i < arrow.length ; i++){
+        arrow[i].addEventListener("click",(e)=>{
+        let arrowParent = e.target.parentElement.parentElement;
+
+        arrowParent.classList.toggle("showmenu");
+        });
+    }
+
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn)
+    sidebarBtn.addEventListener("click",()=>{
+        sidebar.classList.toggle("close")
+    });
+    </script>
+
+    <!-- show the specific content on the content region-->
+    <script src="script.js"></script>
+
+</body>
+</html>

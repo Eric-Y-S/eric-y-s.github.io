@@ -1,0 +1,596 @@
+*{		/* CSS Reset */
+	margin : 0;
+	padding : 0;
+}
+
+body {
+    /* width: 1024px;
+    height: 768px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+} 
+
+.whole_page {
+    justify-content: center;
+    align-content:center;
+    height: 100vh;
+    display:flex;
+    background-color: rgb(255, 255, 255);
+}
+
+/* .background {
+    position : absolute;
+	width : 1384.4894px;
+	height : 1080px;
+    background-color: rgb(14, 105, 56);
+    background-image: url(./image/login/4x/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+} */
+
+.blue_square {
+    height: 100%;
+    /* height: 790px; */
+    width: 68%;
+    
+    position: absolute;
+    left:-0%;
+    background-color: rgb(66,76,115);
+    box-shadow: 1px 0px 5px rgb(66,76,115);
+}
+
+/* 5384 3684 */
+.table {
+    image-rendering: auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* left:347px; */
+    left:0px;
+    top:0px;
+    z-index: 0;
+
+}
+
+.letter {
+    height: 8.1%;
+    width: 5.3%;
+    /* background-color: coral; */
+    z-index:3;
+    opacity: 25%;
+    transition: opacity 0.5s;
+}
+
+.letter:hover {
+    opacity: 80%;
+}
+
+
+.div_inputbox {   
+    
+    position: relative;
+    
+    justify-content: center;
+    width: 21%;
+    height: 5%;
+    left: 62.5%;
+    top:4%;
+    /* background-color: coral; */
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.inputbox {
+    position: relative;
+    width: 50%;
+    text-align: center;
+
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    caret-color: white;
+    font: bold 18px aliceblue;
+    color: aliceblue;
+
+    transition: width 0.5s;
+}
+
+.inputbox::placeholder {
+    color: aliceblue;
+    opacity: 50%;
+}
+
+.inputbox:focus {
+    width: 100%;
+}
+
+.container {
+    width: 86%;
+    height: 78%;
+    /* background-color: aquamarine; */
+    position: relative;
+    left: 29.9%;
+    top:6%;
+    z-index: 0;
+}
+
+
+.s {
+    height: 10%;
+    width: 7.6%;
+    /* background-color: aquamarine; */
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.s1 {
+    height: 7.8%;
+    width: 5.3%;
+    /* background-color: coral; */
+    z-index:2;
+    font-size: 100%;
+    text-align:center;
+}
+.centralline {
+    height: 8.1%;
+    width: 5.3%;
+    z-index:3;
+}
+
+.square {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* left:347px; */
+    left:0px;
+    top:0px;
+    z-index: 1;
+    /* box-shadow: 3px 4px 6px inset hsl(0deg 0% 0% / 1); */
+}
+
+/* --------------------------------------------------animation-------------------------------------------------- */
+
+.v {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* left:347px; */
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+
+    animation-name: vv; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 0s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+
+    @keyframes vv {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;} 
+        }
+
+.e1 {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+    
+    animation-name: ee1; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 0.4s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+    
+    @keyframes ee1 {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+        }
+
+.r1 {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+        
+    animation-name: rr1; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 0.8s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+        
+    @keyframes rr1 {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+        }
+
+
+
+.i {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: ii; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 1.2s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes ii {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.f {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: ff; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 1.6s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes ff {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.y1 {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: y1; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 2s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes y1 {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.y2 {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: y2; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 2.4s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes y2 {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.o {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: oo; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 2.8s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes oo {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.u {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: uu; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 3.2s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes uu {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.r2 {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: r2; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 3.6s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes r2 {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;} 
+    }
+
+.s {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: ss; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 4s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes ss {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.e2 {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: e2; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 4.4s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes e2 {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.q {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: qq; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 4.8s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes qq {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;} 
+    }
+
+.d {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: dd; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 5.2s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes dd {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }
+
+.n {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: nn; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 5.6s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes nn {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;} 
+    }
+
+.a {
+    image-rendering:auto; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index: 1;
+    opacity: 0;
+                
+    animation-name: aa; 
+    animation-direction: normal; 
+    animation-timing-function: linear; 
+    animation-delay: 6s; 
+    animation-iteration-count: infinite; 
+    animation-duration: 8s; 
+}
+                
+    @keyframes aa {
+        0%{opacity:0;}
+        30%{opacity:0%;}
+        40%{opacity: 100%;}
+        50%{opacity:100%;}
+        60%{opacity:0%;}
+        100%{opacity:0;}
+    }

@@ -1,0 +1,49 @@
+#aboutme {
+    width: 80%;
+    height: 80%;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 3%;
+    font-size: 26px;
+    font-weight: 600;
+    display: none;
+    text-align: left;
+    z-index: 10;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+}
+
+#myname {
+
+    font-size: 40px;
+    text-align: left;
+
+}
+
+#status {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+#aboutme .subtitle {
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+#aboutme .info {
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+#cv_button {
+    font-size: 20px;
+    font-weight: 5s00;
+    width: 70px;
+    height: 40px;
+    color: aliceblue;
+    background-color:rgb(56,66,102);
+    margin-top: 30px;
+}

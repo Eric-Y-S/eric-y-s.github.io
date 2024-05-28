@@ -1,0 +1,100 @@
+#skill_work {
+    display: none;
+    position: absolute;
+    top:60px;
+    left:50px;
+    width: 90%;
+    height: calc(100% - 60px);
+    overflow: auto;
+    list-style-type: none;
+    scroll-snap-type: y mandatory;
+    z-index: 10;
+}
+
+#skill_work .content_list{
+    width: 100%;
+    height: auto;
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    padding: 18px 32px;
+    overflow: auto;
+    list-style-type: none;
+    scroll-snap-type: y mandatory;
+}
+
+#skill_work::-webkit-scrollbar{
+    display: none;
+}
+
+#skill_work .content_list .skill {
+    width: 100%;
+    height: 40px;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: row;
+    scroll-snap-align: start;
+}
+
+#skill_work .content_list .skill .skill_icon {
+    width: 45px;
+    height: 45px;
+    padding: 8px 8px;
+    margin-left: 8px;
+    /* background-color: rebeccapurple; */
+}
+
+#skill_work .content_list .skill .skill_icon img {
+    object-fit: cover;
+    height: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#skill_work .content_list .skill .skill_name {
+    width: calc(100% - 40px);
+    height: 40px;
+    padding: 12px 8px 8px 0px;
+    /* background-color: rebeccapurple; */
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+#skill_work .content_list .work {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    margin-bottom: 38px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+#skill_work .content_list .work .display_box {
+    margin: 10px;
+    min-width: 300px;
+    width: auto;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skill_work .content_list .work .display_box img {
+    width: 90%;
+    height: 95%;
+    background-color: white;
+    transition: all 0.6s ease;
+
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2),
+                6px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#skill_work .content_list .work .display_box img:hover {
+    object-fit: contain;
+    width: 95%;
+    height: 100%;
+}

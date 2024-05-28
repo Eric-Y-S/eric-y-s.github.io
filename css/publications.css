@@ -1,0 +1,55 @@
+#publications {
+    width: 70%;
+    height: 80%;
+    margin-left: 16%;
+    margin-right: 16%;
+    margin-top: 3%;
+    font-size: 26px;
+    font-weight: 600;
+    display: none;
+    text-align: left;
+    z-index: 10;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+}
+
+#publications .subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#publications a {
+    text-decoration: none;
+    color: black;
+}
+
+#publications .article {
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 50px;
+}
+
+#publications .info {
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 5px;
+    margin-left: 50px;
+}
+
+#publications .info .myname{
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-weight: 500;
+}
+
+#publications .info .magazine{
+    /*font-family: 'Times New Roman', Times, serif;*/
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+    font-style: italic;
+}
