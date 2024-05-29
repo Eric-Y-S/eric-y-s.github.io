@@ -16,8 +16,6 @@
 </head>
 
 <body>
-    <!-- copyright -->
-    <div class="copyright">©2024 by Z.K. Yang</div>
     <!-- sidebar -->
     <div class="sidebar">
         <!-- sidebar header -->
@@ -132,10 +130,11 @@
 
     <!-- content -->
     <section id="home_section" class="home_section">
-        <!-- background image -->
-        <img src="./image/index/background.jpg" alt="" id="background_img">
+        <!-- copyright -->
+        <div id="copyright">©2024 by Z.K. Yang</div>
         <!-- div near the sidebar -->
         <div class="home_content">
+            <!-- current content -->
             <i class='bx bx-menu' ></i>
             <span id="home_content_welcome" class="text">HomePage</span>
             <span id="home_content_aboutme" class="text">About Me</span>
@@ -143,25 +142,22 @@
             <span id="home_content_publications" class="text">Publications</span>
             <span id="home_content_notes" class="text">Notes</span>
             <span id="home_content_events" class="text">Events</span>
+        </div>
         <!-- content region -->
         <div class="page_content">
             <!-- content:welcome! -->
-            <div id="welcome" class="welcome">   <!--  !!!!!!!!!!!!!!!!!!!!!!!! -->
+            <div id="welcome" style="height: 100%;width: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;">   <!--  !!!!!!!!!!!!!!!!!!!!!!!! -->
+                <!-- background image -->
+                <img src="image/index/white background.jpg" alt="" id="background_img" style="height: 100%;width: 100%;
+                object-fit: cover;position: fixed;object-position: 0% 65%;transition: 2000ms;">
+                <p style="font-size: 108px;font-weight: 700;display: block;color:rgb(56,66,102);z-index: 15;pointer-events: none;">W E L C O M E</p>
+                <p style="font-size: 40px;font-weight: 400;display: block;color:rgb(56,66,102);z-index: 15;margin-top: -40px;pointer-events: none;">to my personal page</p>
                 <div class="welcome_text">
-                    <div class="printer">
-                        <p class="line1">Welcome!- </p>
-                    </div>
-                    <div class="im">
-                        <p style="font-size: 38px;">I'm Zikun Yang</p>
-                        <p style="font-size: 34px;">study in SJTU</p>
-                        <p style="font-size: 32px;">bioscience</p>
-                        <p style="font-size: 26px;">enthusiast</p>
-                        <p style="font-size: 24px;">welcome</p>
-                        <p style="font-size: 22px;">to visit</p>
-                        <p style="font-size: 18px;">here</p>
-                    </div>
+
+                    
                 </div>
-                <div class="welcome_pic"></div>
+                
+                
             </div>
 
             <!-- content:about me -->
@@ -171,8 +167,33 @@
                 <p class="subtitle">Education</p>
                 <p class="info">Sep 2022 - Jun 2026 &emsp;&emsp; B.Sc, Shanghai Jiao Tong University, China</p>
                 <p class="info">Sep 2019 - Jun 2022 &emsp;&emsp; High School Diploma, Suzhou High School Of Jiangsu Province, China</p>
-                <p class="subtitle">xxxx</p>
-                <p class="info">xxxxx</p>
+                <div style="height: 20px;"></div>
+                <a href="https://github.com/Eric-Y-S" target="_blank" style="color: black;text-decoration: none;">
+                    <div class="account">
+                        <div class="icon">
+                            <i class='bx bxl-github'></i>
+                        </div>
+                        <div class="text">
+                            <p>eric-y-s</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="account">
+                    <div class="icon">
+                        <i class='bx bxl-gmail' ></i>
+                    </div>
+                    <div class="text">
+                        <p>ericzkyang@gmail.com</p>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="icon">
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+                    <div class="text">
+                        <p>ericzkyang@sjtu.edu.cn</p>
+                    </div>
+                </div>
                 <a href="./file/zikunyang_CV.pdf" download="zkyang_CV">
                     <button id="cv_button">CV</button>
                 </a>
@@ -223,22 +244,13 @@
                     </li>
                     <li>
                         <div class="skill">
-                            <div class="skill_icon"><img src="" alt=""></div>
-                            <div class="skill_icon" style="margin-left: 0px;padding-left: 0px;padding-right:0px ;"><img src="" alt=""></div>
-                            <div class="skill_name"></div>
+                            <div class="skill_icon"><i class='bx bx-pin' style="font-size: 26px;"></i></div>
+                            <div class="skill_name">Other</div>
                         </div>
-                        <div class="work">
-                            <div class="display_box" title="" alt=""></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="skill">
-                            <div class="skill_icon"><img src="" alt=""></div>
-                            <div class="skill_icon" style="margin-left: 0px;padding-left: 0px;padding-right:0px ;"><img src="" alt=""></div>
-                            <div class="skill_name"></div>
-                        </div>
-                        <div class="work">
-                            <div class="display_box" title="" alt=""></div>
+                        <div class="other">
+                            <div class="display_box" title="linux"><img src="./image/skill&work/linux.svg" alt=""></div>
+                            <div class="display_box" title="git"><img src="./image/skill&work/git.svg" alt=""></div>
+                            <div class="display_box" title="latex"><img src="./image/skill&work/latex.png" alt=""></div>
                         </div>
                     </li>
                 </ul>
@@ -282,38 +294,50 @@
              <div id="events" class="events">
                 <div class="event_box">
                     <div class="figure">
-                        <img src="image/events/new member.jpg" alt="">
+                        <img src="image/events/2024 MCM.jpg" alt="">
                     </div>
                     <div class="text">
-                        <div class="date"><p>Mar 7,2023</p></div>
-                        <div class="content"><p>nnnnnsnnsnsns</p></div>
+                        <div class="date"><p>May 3, 2024</p></div>
+                        <div class="content">
+                            <p class="short">We won M award at ICM!</p>
+                            <p class="detail">Thanks to Sile Chen and Yilin Wang for their close collaboration and dedication.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="event_box">
                     <div class="text">
-                        <div class="date"><p>Mar 7,2023</p></div>
-                        <div class="content"><p>nnnnnsnnsnsns</p></div>
+                        <div class="date"><p>Mar 31, 2024</p></div>
+                        <div class="content">
+                            <p class="short">Climate Fresk</p>
+                            <p class="detail"> It's amazing to see how individual pieces come together to create a bigger picture of our planet's future. 
+                                Every piece counts in creating a greener world for future generations!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="figure">
+                        <img src="image/events/2024 climate fresk.jpg" alt="">
+                    </div>
+                </div>
+                <div class="event_box">
+                    <div class="figure">
+                        <img src="image/events/2023 new member.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <div class="date"><p>Jul 21, 2023</p></div>
+                        <div class="content">
+                            <p class="short">Welcome new family member!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event_box">
+                    <div class="text">
+                        <div class="date"><p>Jun 25, 2023</p></div>
+                        <div class="content">
+                            <p class="short">Enrollment work in Suzhou</p>
+                        </div>
                     </div>
                     <div class="figure">
                         <img src="image/events/2023 enrollment work.jpg" alt="">
-                    </div>
-                </div>
-                <div class="event_box">
-                    <div class="figure">
-                        <img src="" alt="">
-                    </div>
-                    <div class="text">
-                        <div class="date"><p>Mar 7,2023</p></div>
-                        <div class="content"><p>nnnnnsnnsnsns</p></div>
-                    </div>
-                </div>
-                <div class="event_box">
-                    <div class="text">
-                        <div class="date"><p>Mar 7,2023</p></div>
-                        <div class="content"><p>nnnnnsnnsnsns</p></div>
-                    </div>
-                    <div class="figure">
-                        <img src="image/events/new member.jpg" alt="">
                     </div>
                 </div>
             </div>

@@ -10,10 +10,11 @@
     box-sizing: border-box;
 }
 
-.copyright {
-    position: fixed;
+#copyright {
+    position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 45.5%;
+    right: 40%;
     font-size: 14px;
     font-weight: 200;
     color: rgb(200, 199, 199);
@@ -300,20 +301,6 @@
     z-index: 1; 
 }
 
-#background_img{
-    position: fixed;
-    background-color: aliceblue;
-    background-size: 100%;
-    top: -190px;
-    left: 0px;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: 200ms;
-    opacity: 0.8;
-    z-index: 1; 
-}
-
 .home_section .home_content {
     height: 60px;
     display: flex;
@@ -352,11 +339,14 @@
 
 .home_section .page_content {
     width: 100%;
-    height: calc(100% - 60px);
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    position: absolute;
     /* background-color: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 18px 32px;
+    /*padding: 18px 32px;*/
 }
 

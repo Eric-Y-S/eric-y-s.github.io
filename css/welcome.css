@@ -1,21 +1,35 @@
 #welcome {
     display: none;
-    width: 1140px;
-    height: 600px;
+    width: 100%;
+    height: inherit;
     position: relative;
-    top: -50px;
+    top: 0px;
+    left: 0px;
     z-index: 55; 
+    align-items: center;
+}
+
+#background_img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    transition: 200ms;
+    opacity: 1;
+    z-index: 0; 
 }
 
 #welcome .welcome_text {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 320px;
     height: 600px;
-    position: absolute;
-    top: 16%;
-    left: 0%;
-    /* background-color: coral;  */
+    background-color: coral;  
     pointer-events: none;
+    z-index: 55;
 }
 
 #welcome .welcome_text .printer {
@@ -27,7 +41,6 @@
     display: flex;
     justify-content: left;
     text-align: left;
-    
     transform: translate(-50%, -50%);
 }
 

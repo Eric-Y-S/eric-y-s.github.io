@@ -38,9 +38,44 @@
     margin-bottom: 5px;
 }
 
+#aboutme .account {
+    height: 40px;
+    width: 150px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+    text-decoration: none;
+}
+
+#aboutme .account .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40px;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+
+#aboutme .account .text {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 200;
+    color: black;
+    text-align: start;
+    text-decoration: none;
+}
+
 #cv_button {
     font-size: 20px;
-    font-weight: 5s00;
+    font-weight: 500;
     width: 70px;
     height: 40px;
     color: aliceblue;
